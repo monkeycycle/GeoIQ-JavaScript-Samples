@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" charset="utf-8" src="http://geocommons.com/javascripts/f1.api.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<style>#sample_map {width: 100%; height: 400px;}</style>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.background').change(function() {
+		change_background();
+});
+ });
+  sample_map = new F1.Maker.Map(
+  {map_id: "42698",
+   dom_id: "sample_map",
+     uiLayers: false,
+     uiStyles: false,
+     uiLegend: false,
+     uiZoom: false
+
+   
+   
+   });
+   sample_map.setStyle({zoom:{ bgColor:0x000000,iconColor:0xFFFFFF, bgAlpha:0.65, expanded:false, dropShadow:false,horizontal:true, offset:{x:30,y:0},width:30}})
+   
+  
+</script>
+</head>
+
+<body>
+
+<div class="geocommons_map" id="sample_map"></div><br/>
+</body>
+</html>
