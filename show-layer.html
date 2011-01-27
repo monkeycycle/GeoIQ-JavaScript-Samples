@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>#geocommons_map {width: 100%; height: 400px;}</style>
+<script type="text/javascript" charset="utf-8" src="http://geocommons.com/javascripts/f1.api.js"></script>
+<script type="text/javascript" charset="utf-8">
+  geocommons_map = new F1.Maker.Map({map_id: "47978", dom_id: "geocommons_map"});
+  
+  function showLayer(){
+	  geocommons_map.showLayer(0,true);
+  }
+</script>
+</head>
+<body>
+<div class="geocommons_map" id="geocommons_map"></div><br/>
+
+<button type="button" onClick="showLayer();">Show Layer</button>
+</body>
+</html>
+
